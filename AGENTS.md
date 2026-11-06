@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## App architecture
+- Persist signed-in users' finance chat as user-owned UI messages in Lovable Cloud, and enforce ownership in both row policies and every streaming request so histories stay private.
+- Keep calculator formulas in a pure, client-safe utility module so the dashboard and its rule tests use the same computations.
